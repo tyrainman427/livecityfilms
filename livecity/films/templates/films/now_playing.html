@@ -1,0 +1,110 @@
+{% extends 'films/base.html' %}
+{% load static %}
+
+{% block body %}
+
+
+<section class="section banner pb-0">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<h2>WATCH <span class="text-color">MOVIE TRAILERS</span> <br>My work is presented here, check them below.</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class=" portfolio ">
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+	      	<div class="col-10 text-center">
+		        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+		          <label class="btn active ">
+		            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+		          </label>
+		          <!-- <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+		          </label>
+		          <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="branding" />branding
+		          </label>
+		          <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="illustration" />Web Development
+		          </label>
+		           <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="photo" />Photography
+		          </label> -->
+		        </div>
+	      	</div>
+    	</div>	
+
+		<div class="row shuffle-wrapper portfolio-gallery">
+	      <div class="col-lg-6 col-6 mb-4 shuffle-item"  data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+		      	<div class="position-relative inner-box">
+		          <div class="image position-relative ">
+					<iframe width="100%" height="500" src="https://www.youtube.com/embed/7W8X5cD3UHo?rel=0?modestbranding=1" title="Missing Paige Movie Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	                <!-- <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="portfolio-single.html">
+	                      <h5 class="mb-0">Missing Paige</h5>
+	                      <p>Movie Trailer</p>
+	                    </a>
+	                  </div>
+	                </div>  -->
+	            </div>
+		      </div>
+	      </div>
+
+	      <div class="col-lg-6 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+	        <div class="position-relative inner-box" >
+	            <div class="image position-relative ">
+					<iframe width="100%" height="500" src="https://www.youtube.com/embed/WgG3dOccilk?rel=0?modestbranding=1" title="Missing Paige (Pilot)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	                <!-- <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="portfolio-single.html">
+	                      <h5 class="mb-0">Missing Paige</h5>
+	                      <p>Watch Movie</p>
+	                    </a>
+	                </div> 
+	            </div> -->
+	        </div>
+	      </div>
+	      </div>
+
+	      <div class="col-lg-46 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+					<iframe width="100%" height="500" src="https://www.youtube.com/embed/TgtpoQkeglo?rel=0?modestbranding=1" title="BMPCC 6K Pro | Sigma 50 -100mm 1.8 | Hollywood BLVD | Travel Video." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	                <!-- <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="portfolio-single.html">
+	                      <h5 class="mb-0">Business </h5>
+	                      <p>marketing</p>
+	                    </a>
+	                  </div>
+	                </div>  -->
+	            </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-6 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;branding&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+					<iframe width="100%" height="500" src="https://www.youtube.com/embed/n9BWLxMKO9I?rel=0?modestbranding=1" title="The Greatest Stories Ever Told." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	                <!-- <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="portfolio-single.html">
+	                      <h5 class="mb-0">Portfolio</h5>
+	                      <p>Design</p>
+	                    </a>
+	                  </div>
+	                </div>  -->
+	            </div>
+	        </div>
+	      </div>
+
+	    </div>
+	</div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Live City Films</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="thomson" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/themify/css/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/counto/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/aos/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/owl-carousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/owl-carousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/magnific-popup/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animated-text/animated-text.css' %}">
+
+
+<!-- USING A CDN -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/custom.scss' %}" rel="stylesheet">
+
+</head>
+
+<body>
+  
+<!-- Navigation Start -->
+<!-- Header Start --> 
+
+<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+	<div class="container">
+	  <a class="navbar-brand" href="/">
+	  	<h5>Live City Films</h5>
+	  </a>
+
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-align-justify"></span>
+	  </button>
+  
+		  <div class="collapse navbar-collapse" id="navbarsExample09">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+			  <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+			  <li class="nav-item"><a class="nav-link" href="/pricing/">Pricing</a></li>
+			  <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+			   <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+			   <li class="nav-item"><a class="nav-link" href="">Merch</a></li>
+			   <li class="nav-item"><a class="nav-link" href="/now_playing/">Now Playing</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Header Close --> 
+
+
+<!-- Navigation ENd -->
+
+{% block body %}
+
+{% endblock %}
+
+
+
+
+<!-- Footer start -->
+<section class="footer">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-6">
+				<p class="mb-0">Copyrights © Live City Films 2023. Designed by <a href="" class="text-white">Rainman</a></p>
+			</div>
+			<div class="col-lg-6">
+				<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item"><a href="https://www.facebook.com/livecityfilms/?ref=bookmarks" target="_blank"><i class="ti-facebook mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="https://twitter.com/livecityfilms" target="_blank"><i class="ti-twitter mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="https://vimeo.com/user48637389" target="_blank"><i class="ti-vimeo mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.youtube.com/channel/UCXVHe5rh4gbn6jRKmDYu1-A" target="_blank"><i class="ti-youtube mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/livecityfilms/" target="_blank"><i class="ti-instagram mr-3"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer End -->
+
+<!-- jQuery -->
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/aos/aos.js' %}"></script>
+<script src="{% static 'plugins/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+<script src="{% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'plugins/animated-text/animated-text.js' %}"></script>
+<script src="{% static 'plugins/counto/apear.js' %}"></script>
+<script src="{% static 'plugins/counto/counTo.js' %}"></script>
+
+ <!-- Google Map -->
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<script src="{% static 'js/script.js' %}"></script>
+
+</html>

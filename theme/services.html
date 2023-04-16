@@ -1,0 +1,75 @@
+{% extends 'films/base.html' %}
+{% load static %}
+
+{% block body %}
+
+<section>
+	<!-- Marketing messaging and featurettes
+	================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+	<h3 class="text-center mb-5 mt-5">FILM PRODUCTION SERVICES</h3>
+		<div class="container-fluid">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img class="d-block w-100" src="images/bob1.jpeg" alt="First slide">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="images/bob2.jpeg" alt="Second slide">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="images/bob3.jpeg" alt="Third slide">
+				  </div>
+				</div>
+			  </div>
+		</div>
+
+  
+	<div class="container marketing">
+  
+	  <!-- Three columns of text below the carousel -->
+	
+	  <!-- START THE FEATURETTES -->
+
+  
+	  <hr class="featurette-divider">
+  
+	  <div class="row featurette">
+		<div class="col-md-7">
+		  <h3 class="featurette-heading">FILM/VIDEO EDITING. <span class="text-muted">It’ll blow your mind.</span></h3>
+		  <p class="lead">Our online video editing service is perfect for businesses and individuals looking to create professional-quality videos without breaking the bank. Our team of experienced editors can help you bring your vision to life, whether you have raw footage that needs to be polished or a fully-produced video that just needs a final touch. But what really sets us apart is our commitment to customer service. Our team is available to assist you every step of the way, whether you need help with the technical aspects of video editing or simply have questions about how to bring your ideas to life. We pride ourselves on delivering high-quality results and providing an enjoyable and stress-free experience for our clients. Book our services today and see the difference for yourself!</p>
+		</div>
+		<div class="col-md-5 bg-dark embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" width="500" height="500" src="https://youtube.com/embed/Y1IRdDJ5NYk?rel=0" allowfullscreen></iframe>
+		  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+		  <!-- <a href="https://youtu.be/Y1IRdDJ5NYk" class="glightbox play-btn"></a> -->
+		</div>
+	  </div>
+
+    <hr class="featurette-divider">
+  
+    <div class="row featurette int">
+	  <div class="col-md-7">
+		<h3 class="featurette-heading">COLOR GRADING. <span class="text-muted">See for yourself.</span></h3>
+		<p class="lead">Our online video color grading service is perfect for businesses and individuals looking to take their video production to the next level. Whether you're working on a feature film, a commercial, or a personal project, our team of skilled colorists can help you achieve the perfect look for your video.</p>
+	  </div>
+		
+		<div class="col-md-5 sm-img">
+			<!-- <svg width="500" height="500"></svg> -->
+			<div class='img background-img'></div>
+    	<div class='img foreground-img'></div>
+		  <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+      <div class='slider-button'></div>
+		</div>
+	</div>
+
+	
+  
+	  <!-- /END THE FEATURETTES -->
+  
+	</div><!-- /.container -->
+
+  </section>
+
+
+ {% endblock %}

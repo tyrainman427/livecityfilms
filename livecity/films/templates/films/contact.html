@@ -1,0 +1,97 @@
+{% extends 'films/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+
+<section class="page-title section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h1 class="text-capitalize mb-0 text-lg">LIGHTS - CAMERA - ACTION</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact form start -->
+<section class="contact section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-4 mb-4 mb-lg-0 col-md-4">
+                <h4>Contact Info</h4>
+                <p>Bobby Drake </p>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 col-md-4">
+                <h4>Location</h4>
+                <p>Serving CT & Nationwide <br>Check us out</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h4>Contact</h4>
+                 <p class="mb-0">info@livecityfilms.com</p>
+                <p class="mb-0">800 988 5965</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="google-map">
+                    <!-- <div id="map"></div> -->
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider mt-5 mb-5">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5 contact-title">
+                    <h2 class="text-white">Contact us</h2>
+                </div>
+
+                <form id="contact-form" class="contact__form mt-5" method="post">
+                    {% csrf_token %}
+
+             <!-- form message -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                            Your message was sent successfully.
+                        </div>
+                    </div>
+                </div>
+                <!-- end message -->
+                <div class="form-row text-white">
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            {{ form.full_name|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            {{ form.subject|as_crispy_field }}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="form-group mb-3">
+                             {{ form.email|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                         <div class="form-group-2 mb-4">
+                            {{ form.message|as_crispy_field }}
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>  
+        </div>
+    </div>
+</section>
+
+{% endblock %}

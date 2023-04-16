@@ -1,0 +1,204 @@
+{% extends 'films/base.html' %}
+{% load static %}
+
+{% block body %}
+
+  <style>
+	.bd-placeholder-img {
+	  font-size: 1.125rem;
+	  text-anchor: middle;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  user-select: none;
+	}
+	img {
+		height: 30em;
+	} 
+
+	@media (min-width: 768px) {
+	  .bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	  }
+	}
+ .container .img {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-size: 500px 100%;
+}
+ .container .background-img {
+	 background-image: url('https://i.imgur.com/s08MkXC.jpg');
+}
+ .container .foreground-img {
+	 background-image: url('https://i.imgur.com/PfIWek4.jpg');
+	 width: 50%;
+}
+ .container .slider {
+	 position: absolute;
+	 -webkit-appearance: none;
+	 appearance: none;
+	 width: 100%;
+	 height: 100%;
+	 background: rgba(242, 242, 242, .3);
+	 outline: none;
+	 margin: 0;
+	 transition: all 0.2s;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .container .slider:hover {
+	 background: rgba(242, 242, 242, .1);
+}
+ .container .slider::-webkit-slider-thumb {
+	 -webkit-appearance: none;
+	 appearance: none;
+	 width: 6px;
+	 height: 200px;
+	 background: white;
+	 cursor: pointer;
+}
+ .container .slider::-moz-range-thumb {
+	 width: 6px;
+	 height: 600px;
+	 background: white;
+	 cursor: pointer;
+}
+ .container .slider-button {
+	 pointer-events: none;
+	 position: absolute;
+	 width: 30px;
+	 height: 30px;
+	 border-radius: 50%;
+	 background-color: white;
+	 left: calc(50% - 4px);
+	 top: calc(50% - 4px);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .container .slider-button:after {
+	 content: '';
+	 padding: 3px;
+	 display: inline-block;
+	 border: solid #5d5d5d;
+	 border-width: 0 2px 2px 0;
+	 transform: rotate(-45deg);
+}
+ .container .slider-button:before {
+	 content: '';
+	 padding: 3px;
+	 display: inline-block;
+	 border: solid #5d5d5d;
+	 border-width: 0 2px 2px 0;
+	 transform: rotate(135deg);
+}
+
+@media (max-width:760px) {
+  .sm-img {
+      height:200px;
+    }
+}
+ 
+  </style>
+
+
+
+<main>
+	<!-- Marketing messaging and featurettes
+	================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+	<h3 class="text-center mb-5 mt-5">FILM PRODUCTION SERVICES</h3>
+		<div class="container-fluid">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img class="d-block w-100" src="{% static 'images/bob1.jpeg' %}" alt="First slide">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="{% static 'images/bob2.jpeg' %}" alt="Second slide">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="{% static 'images/bob3.jpeg' %}" alt="Third slide">
+				  </div>
+				</div>
+			  </div>
+		</div>
+
+  
+	<div class="container marketing">
+  
+	  <!-- Three columns of text below the carousel -->
+	
+	  <!-- START THE FEATURETTES -->
+
+  
+	  <hr class="featurette-divider">
+  
+	  <div class="row featurette">
+		<div class="col-md-7">
+		  <h3 class="featurette-heading">FILM/VIDEO EDITING. <span class="text-muted">It’ll blow your mind.</span></h3>
+		  <p class="lead">Our online video editing service is perfect for businesses and individuals looking to create professional-quality videos without breaking the bank. Our team of experienced editors can help you bring your vision to life, whether you have raw footage that needs to be polished or a fully-produced video that just needs a final touch. But what really sets us apart is our commitment to customer service. Our team is available to assist you every step of the way, whether you need help with the technical aspects of video editing or simply have questions about how to bring your ideas to life. We pride ourselves on delivering high-quality results and providing an enjoyable and stress-free experience for our clients. Book our services today and see the difference for yourself!</p>
+		</div>
+		<div class="col-md-5 bg-dark embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" width="500" height="500" src="https://youtube.com/embed/Y1IRdDJ5NYk?rel=0" allowfullscreen></iframe>
+		  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+		  <!-- <a href="https://youtu.be/Y1IRdDJ5NYk" class="glightbox play-btn"></a> -->
+		</div>
+	  </div>
+
+    <hr class="featurette-divider">
+  
+    <div class="row featurette int">
+	  <div class="col-md-7">
+		<h3 class="featurette-heading">COLOR GRADING. <span class="text-muted">See for yourself.</span></h3>
+		<p class="lead">Our online video color grading service is perfect for businesses and individuals looking to take their video production to the next level. Whether you're working on a feature film, a commercial, or a personal project, our team of skilled colorists can help you achieve the perfect look for your video.</p>
+	  </div>
+		
+		<div class="col-md-5 sm-img">
+			<!-- <svg width="500" height="500"></svg> -->
+			<div class='img background-img'></div>
+    	<div class='img foreground-img'></div>
+		  <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+      <div class='slider-button'></div>
+		</div>
+	</div>
+
+
+	  <!-- /END THE FEATURETTES -->
+  
+	</div><!-- /.container -->
+
+  </main>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ <!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<!-- <script src="js/script.js"></script> -->
+
+<script>
+$("#slider").on("input change", (e)=>{
+  const sliderPos = e.target.value;
+  // Update the width of the foreground image
+  $('.foreground-img').css('width', `${sliderPos}%`)
+  // Update the position of the slider button
+  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+});
+</script>
+
+{% endblock %}
+
+
+
+
+

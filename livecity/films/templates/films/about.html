@@ -1,0 +1,61 @@
+{% extends 'films/base.html' %}
+{% load static %}
+
+{% block body %}
+
+<!-- Banner start -->
+<section class="section banner-3">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-12">
+				<div class="profile mb-5">
+					<img src="{% static 'images/about.png' %}" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<h2>Bobby Drake</h2>
+				<p class="lead mb-4">I CREATE PREMIUM FILM, VIDEO EDITING AND PHOTOGRAPHY</p>
+
+				<p class="mb-4">LIVE CITY FILMS IS AN INDEPENDENT FILM PRODUCTION COMPANY THAT SPECIALIZES IN PRODUCING HIGH-QUALITY, FEATURE-LENGTH FILMS FOR CLIENTS AND GLOBAL AUDIENCES. THE COMPANY WAS FOUNDED BY A GROUP OF INDENPENDENT FILM MAKERS, WHO HAVE A COMBINED 20 YEARS OF EXPERIENCE IN THE FILM INDUSTRY.
+					OUR MISSION IS TO TELL COMPELLING, THOUGHT-PROVOKING STORIES THAT ENTERTAIN, EDUCATE, AND INSPIRE OUR AUDIENCE. WE BELIEVE THAT GREAT FILMS HAVE THE POWER TO CHANGE THE WORLD AND WANT TO USE OUR PLATFORM TO BRING IMPORTANT SOCIAL AND CULTURAL ISSUES TO THE FOREFRONT.
+					WE FINANCE OUR FILMS THROUGH A COMBINATION OF PRIVATE INVESTMENT, GRANTS, AND CROWDFUNDING CAMPAIGNS. OUR FILMS ARE DISTRIBUTED THROUGH TRADITIONAL MEANS SUCH AS FILM FESTIVALS AND DISTRIBUTION DEALS, AS WELL AS THROUGH DIGITAL PLATFORMS SUCH AS STREAMING SERVICES AND ONLINE RENTALS.
+					OUR TEAM IS MADE UP OF TALENTED FILMMAKERS AND EDITORS WITH A PASSION FOR STORYTELLING. WE ARE DEDICATED TO PRODUCING HIGH-QUALITY FILMS THAT RESONATE WITH AUDIENCES AROUND THE WORLD.</p>
+
+				
+				<!-- <img src="images/signature.png" alt="" class="img-fluid"> -->
+			</div>
+
+			<div class="col-lg-5">
+				<ul class="list-unstyled mt-3 mb-5 about-list">
+					<li class="text-white">- Film/Video Editing</li>
+					<li class="text-white">- Color Grading</li>
+					<li class="text-white">- Photography</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Banner End -->
+<hr class="featurette-divider">
+
+
+
+
+
+<!-- Cta Start -->
+<section class="section-sm pt-0 cta">
+	<div class="container">
+		<div class="row align-items-center bg-dark p-5">
+			<div class="col-lg-8">
+				<h3 class="text-white mb-0">Want to discuss about any project?</h3>
+			</div>
+			<div class="col-lg-4 text-lg-right mt-5 mt-lg-0">
+				<a href="contact.html" class="btn btn-white">Contact me</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Cta ENd -->
+
+{% endblock %}
