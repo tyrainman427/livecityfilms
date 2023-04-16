@@ -126,3 +126,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+STRIPE_SECRET_KEY = "sk_test_ZfpshEHbQwmXrrDjnGiCYJLx"
+STRIPE_PUBLISHABLE_KEY ="pk_test_kmDRvVlHmTVS6WpBECqQQ46y"
+
+STRIPE_WEBHOOK_SECRET = "whsec_19aa6b2e3baf90602bae9d318021bae6ff8160aa705707784cdc096715013491"
