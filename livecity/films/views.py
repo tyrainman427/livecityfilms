@@ -45,13 +45,13 @@ class Pricing(TemplateView):
     #     context['stripe_publishable_key'] = settings.STRIPE_PUBLISHABLE_KEY
     #     return context  
     def get_context_data(self, **kwargs):
-        product = Product.objects.get(name="Basic Pro")
-        prices = product.price
+        products = Product.objects.all()
+     
         context = super(Pricing,
                         self).get_context_data(**kwargs)
         context.update({
-            "product": product,
-            "prices": prices
+            "products": products,
+        
         })
         return context
 

@@ -5,18 +5,23 @@
 
 
 <style>
-.hero{
+/* .hero{
   position: relative;
-  /* background-image: url("images/Close-up\ of\ camera\ lens\ gears.jpg");
+  background-image: url("images/Close-up\ of\ camera\ lens\ gears.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9; */
+  opacity: 0.9; 
 }
 .bg-img {
 	opacity: 0.5;
+} */
+.btn {
+	/* position: absolute; */
+    top: 36rem;
+    left: 0rem;
+	border-radius: 3rem;
 }
-
 </style>
 
 <body>
@@ -33,14 +38,15 @@
 			  
 				  <div class="container">
 					<div class="card-deck mb-3 text-center">
+						{% for product in products %}
 					  <div class="card mb-4 box-shadow">
 						<div class="card-header">
 						  <h5 class="my-0 font-weight-normal">{{ product.name }}</h5>
 						</div>
 						<div class="card-body d-flex flex-column">
 						  <h2 class="card-title pricing-card-title">${{ product.price|floatformat  }} </h2>
-						  <p class="justify-content-center text-dark">{{ product.description}}</p>
-						  {% comment %} <ul class="list-unstyled mt-3 mb-4">
+						   <p class="text-center text-dark">{{ product.description}}</p> 
+						  <!-- <ul class="list-unstyled mt-3 mb-4">
 							<li>(Starting guide price)</li>
 							<li>Great for when you are on a tight budget</li>
 							<li>Ideal for 'Run & Gun' style productions</li>
@@ -50,58 +56,19 @@
 							<li>Live City Films Video Overlay Template</li>
 							<li>Royalty Free Music</li>
 							<li>Comprehensive digital marketing support to promote your video production</li>
-						  </ul> {% endcomment %}
+						  </ul> -->
 						  <form action="{% url 'films:create-checkout-session' product.id %}" method="POST">
 							{% csrf_token %}
-						  <button type="submit" id="checkout-button" class="btn btn-lg btn-block btn-dark mt-auto">ORDER NOW</button>
+						  <button type="submit" class="btn btn-lg btn-block btn-dark">ORDER NOW</button>
 						  </form>
 						</div>
 					  </div>
-					  <div class="card mb-4 box-shadow">
-						<div class="card-header">
-						  <h5 class="my-0 font-weight-normal">Production Plus</h5>
-						</div>
-						<div class="card-body d-flex flex-column">
-						  <h2 class="card-title pricing-card-title">$2,500 </h2>
-						  <ul class="list-unstyled mt-3 mb-4">
-							<li>(Starting guide price)</li>
-							<li>Great for Testimonials, How to & Instructional Videos, About Us etc.</li>
-							<li>30-min Discover & Strategy Session</li>
-							<li>1 x Day HD video Production shoot on location</li>
-							<li>Custom create treatment/storyboard Development</li>
-							<li>Video Editing & Post Production with 2-rounds of Client approvals/revisions</li>
-							<li>Graphic Packaging (Intro/Outro, 2 to 4 Titles etc.)</li>
-							<li>Royalty Free Music</li>
-							<li>Comprehensive digital marketing support to promote your video production</li>
-						  </ul>
-						  <button type="button" class="btn btn-lg btn-block btn-dark">ORDER NOW</button>
-						</div>
-					  </div>
-					  <div class="card mb-4 box-shadow">
-						<div class="card-header">
-						  <h5 class="my-0 font-weight-normal">Production Pro</h5>
-						</div>
-						<div class="card-body d-flex flex-column">
-						  <h2 class="card-title pricing-card-title">$5,000 </h2>
-						  <ul class="list-unstyled mt-3 mb-4">
-							<li>(Starting guide price)</li>
-							<li>Great for high end video production.</li>
-							<li>1-hour Discover & Strategy Session</li>
-							<li>2 x Day HD video Production shoot on location</li>
-							<li>Custom create treatment/storyboard Development</li>
-							<li>Video Editing & Post Production with 2-rounds of Client approvals/revisions</li>
-							<li>Graphic Packaging (Intro/Outro, 2 to 4 Titles etc.)</li>
-							<li>Royalty Free Music</li>
-							<li>Comprehensive digital marketing support to promote your video production</li>
-						  </ul>
-						  <button type="button" class="btn btn-lg btn-block btn-dark mt-auto">ORDER NOW</button>
-						</div>
-					  </div>
-					</div>
+					  {% endfor %}
+					</div> 
 	      	</div>
     	</div>	
 
-		<h4>Process for uploading files to our online video editing service:</h4>
+		<h4 class="mt-5">Process for uploading files to our online video editing service:</h4>
 		<ol style="color:white;">
 			<li>Fill out and submit the order form for your desired service, a link will be sent to your provided email address.</li>
 			<li>Click on the link provided by Live City Films to access the upload page.</li>
